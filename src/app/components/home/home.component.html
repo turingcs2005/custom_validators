@@ -1,0 +1,16 @@
+<p>A simple intake form</p>
+
+<form (ngSubmit)="onSubmit()" [formGroup]="intakeForm">
+    <mat-form-field appearance="outline">
+        <mat-label>state</mat-label>
+        <input matInput [formControl]="$any(intakeForm.get('state'))">
+    </mat-form-field>
+   
+    <br> 
+   
+    <mat-form-field appearance="outline">
+        <mat-label>city</mat-label>
+        <input matInput [formControl]="$any(intakeForm.get('city'))">
+    </mat-form-field>
+
+</form>

@@ -1,0 +1,8 @@
+###
+@baseUrl = http://localhost:5002/api/geography
+
+###
+get {{baseUrl}}/validateState/MA
+
+###
+get {{baseUrl}}/validateCity/MA/Fall%20River
